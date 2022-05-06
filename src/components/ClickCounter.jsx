@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import withCounter from "../hocComponents/withCounter";
 
+const secondParam = 'this is an addictional parameter'
+
 class ClickCounter extends Component {
   render() { 
     const {incrementCount, count} = this.props
@@ -12,4 +14,4 @@ class ClickCounter extends Component {
   }
 }
  
-export default withCounter(ClickCounter);
+export default withCounter(ClickCounter, secondParam);
